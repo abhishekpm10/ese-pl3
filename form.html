@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Welfare Portal</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <section class="navigation">
+        <nav>
+            <a href="index.html"> home</a>
+            <a href="scheme1.html"> scheme 1</a>
+            <a href="scheme2.html"> scheme 2</a>
+            <a href="scheme3.html"> scheme 3</a>
+            <a href="form.html"> Register</a>
+        </nav>
+    </section>
+    
+    <h1> Student  Info</h1>
+    
+    <section class="schemes-menu">
+        <form id="FForm" name="userForm" action="#" method="post" autocomplete="on">
+            <fieldset>
+            <fieldset>
+                <legend>STUDENT INFORMATION</legend>
+                <section id="student information">
+                    <label for="fname" form="FForm" reqired>Enter Scheme name:</label>
+                    <input type="text" id="fname" placeholder="First Name" name="fname" required><br><br>
+
+                    <label for="fname" form="FForm" reqired>First name:</label>
+                    <input type="text" id="fname" placeholder="First Name" name="fname" required><br><br>
+
+                    <label for="mname" form="FForm" reqired>Middle name:</label>
+                    <input type="text" id="mname" placeholder="Middle Name" name="mname" required><br><br>
+
+                    <label for="lname" form="FForm" reqired>Last name:</label>
+                    <input type="text" id="lname" placeholder="Last Name" name="lname" required><br><br>
+
+                    <label for="pname" form="FForm">Parents name:</label>
+                    <input type="text" id="pname" placeholder="Parents Name" name="pname" required><br><br>
+
+                    <label for="contact" form="FForm" reqired>Mo. No.:</label>
+                    <input type="tel" id="contact" placeholder="Mobile No." name="contact" required><br><br>
+
+                    <label for="email" form="FForm" reqired> Email:</label>
+                    <input type="email" id="email" placeholder="Email" name="email"><br><br>
+
+                    <!-- id proof portion starts here -->
+                    <label for="idProof">Choose ID Proof:</label>
+                    <select id="idProof" name="idProof">
+                        <option value="VoterC">Voting Card</option>    
+                        <option value="DLicense">Driving License</option>
+                        <option value="Adhar" selected>Adhar Card</option>
+                        <option value="Passport">Indian Passport</option>
+                        <option value="Pan">Pan Card</option>
+                    </select><br>
+                    <!-- id proof portion starts here -->
+
+                    <label for="Address" form="FForm" reqired> Address:</label>
+                    <textarea rows="5" cols="20" id="Address" maxlen="150" placeholder="Address" name="Address" required></textarea><br>  
+
+                </section>
+            </fieldset>
+            <fieldset>
+                <legend>EDUCATIONAL INFORMATION</legend>
+                <section id="educational information">
+                    
+                    <label for="qualification" form="FForm" reqired>Qualification:</label>
+                    <select id="qualification" name="qualification">
+                        <option value="UG" selected> Undergraduation </option>
+                        <option value="PG"> Postgraduation </option>
+                    </select><br><br>
+
+                    <!-- <select id="qualification" name="qualification">
+                        <option value="btech"> BTech </option>
+                        <option value="mtech"> Mtech </option>
+                        <option value="bba"> BBA </option>
+                        <option value="mba"> MBA </option>
+                        <option value="bsc"> BSC </option>
+                        <option value="msc"> MSC </option>
+                    </select><br> -->
+    
+                    <label for="branch" form="FForm" reqired>Branch:</label>
+                    <select id="branch" name="Branch">
+                        <option value="CSE" selected> Computer Science </option>
+                        <option value="IT"> Information Technology </option>
+                        <option value="MECH"> Mechanical </option>
+                        <option value="CTRICAL"> Electrical </option>
+                        <option value="CTRONICS"> Electronics </option>
+                        <option value="CIVIL"> Civil </option>
+                    </select><br><br>
+
+                    <label for="clgName" form="FForm" reqired>College Name:</label>
+                    <input list="clgName" name="clgName">
+                    <datalist id="clgName">
+                        <option value="IITB"> Indian Institute of Technology,Bombay </option>
+                        <option value="VNIT"> Visvesvaraya National Institute of Technology, Nagpur </option>
+                        <option value="COEP"> College of Engineering,Pune </option>
+                        <option value="VJTI"> Veermata Jijabai Technological Institute,Mumbai  </option>
+                        <option value="SPCE">  Sardar Patel College of Engineering,Mumbai </option>
+                        <option value="PICT">  Pune Institute of Computer Technology,Pune </option>
+                        <option value="WCE">  Walchand College of Engineering, Sangli </option>
+                        <option value="VIT">  Vishwakarma Institute of Technology,Pune  </option>
+                    </datalist><br><br>
+
+                    <label for="unvName" form="FForm" reqired>University Name:</label>
+                    <input list="unvName" name="unvName">
+                    <datalist id="unvName">
+                        <option value="BAMU"> Dr. Babasaheb Ambedkar Marathwada University </option>
+                        <option value="BATU">Dr. Babasaheb Ambedkar Technological University</option>
+                        <option value="BSKKV">Dr. Balasaheb Sawant Konkan Krishi Vidyapeeth</option>
+                        <option value="GU">Gondwana University</option>
+                        <option value="KKSU">Kavikulguru Kalidas Sanskrit University</option>
+                        <option value="RTMNU">Rashtrasant Tukadoji Maharaj Nagpur University</option>
+                        <option value="SGBAU">Sant Gadge Baba Amravati University</option>
+                        <option value="SPPU">Savitribai Phule Pune University</option>
+                        <option value="SU">Shivaji University</option>
+                        <option value="PAHSU">Punyashlok Ahilyadevi Holkar Solapur University</option>
+                    </datalist><br><br>
+
+
+                    <label for="eSeat" form="FForm" reqired>Exam Seat No:</label>
+                    <input type="text" id="eSeat" placeholder="Exam Seat No" name="eSeat"><br><br>
+
+
+                </section>
+            </fieldset>
+           
+            <br>
+                <button type="submit" form="FForm" reqired onclick="fun()"> Submit </button><br><br>
+                <button type="reset" form="FForm" reqired> Reset </button>
+            </fieldset>
+    </form> 
+
+    <script>
+        function fun()
+        {
+            let fn=document.getElementById("fname").value;
+            let ln=document.getElementById("lname").value;
+
+            alert(`Hello ${fn} ${ln} thank you for registering. Keep this ref no  ${ Math.random() } future use `);
+        }
+    </script>
+    </section>
+</body>
+</html>
